@@ -1,4 +1,4 @@
-package com.brianway.learning.java.jvm.classloading;
+    package com.brianway.learning.java.jvm.classloading;
 
 /**
  * Created by brian on 17/3/20.
@@ -10,7 +10,7 @@ public class DeadLoopClass {
         if (true) {
             System.out.println(Thread.currentThread() + " init DeadLoopClass");
             while (true) {
-
+               //TODO 并非线程阻塞，而是一直循环，类的初始化一直没有结束
             }
         }
     }
